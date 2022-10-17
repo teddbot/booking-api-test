@@ -3,11 +3,12 @@ Documentation       API Test using RESTfulBooker application
 Test Timeout        1 minute
 Library             RequestsLibrary
 Library             Collections
-Library             JsonValidator
+# Library             JsonValidator
 Library             Process
 Library             OperatingSystem
+Library             JSONLibrary
+Library             SeleniumLibrary
 Suite Setup         Ping Server
-
 
 
 *** Variables ***
@@ -23,12 +24,12 @@ ${CONTENT_TYPE}         application/json
 ${USERNAME}             admin
 ${PASSWORD}             password123
 #BOOKING DETAILS        ---
-${FIRSTNAME}            Anthony
-${LASTNAME}             ODonnell
+${FIRSTNAME}            Teddy
+${LASTNAME}             Nzioka
 ${TOTALPRICE}           500
 ${DEPOSITPAID}          true
-${CHECKIN}              2019-08-30
-${CHECKOUT}             2019-09-10
+${CHECKIN}              2022-10-15
+${CHECKOUT}             2022-10-20
 ${ADDITIONALNEEDS}      Clearly Defined Requirements
 
 
